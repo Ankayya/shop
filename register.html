@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="register-container">
+        <form id="registerForm">
+            <h2>Create Account</h2>
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group password-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="toggle-password" id="togglePassword">Show</span>
+            </div>
+            <div class="password-strength" id="passwordStrength"></div>
+            <div class="input-group">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit">Register</button>
+            <div id="register-error-message"></div>
+        </form>
+        <div class="register-link">
+            <a href="index.html">Back to Login</a>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html> 

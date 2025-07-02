@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Flipkart Style</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="fk-navbar">
+        <div class="fk-nav-logo">ShopEase</div>
+        <form class="fk-search-bar">
+            <input type="text" placeholder="Search for products, brands and more" id="search-input">
+            <button type="submit"><img src="https://img.icons8.com/ios-filled/20/ffffff/search--v1.png" alt="Search"></button>
+        </form>
+        <div class="fk-nav-actions">
+            <a href="login.html" class="fk-nav-link">Login</a>
+            <a href="register.html" class="fk-nav-link">Register</a>
+            <a href="#" class="fk-nav-link">Become a Seller</a>
+            <a href="cart.html" class="fk-nav-link cart-link">Cart <span id="cart-count">0</span></a>
+            <button id="theme-toggle" title="Toggle theme" style="background:none;border:none;cursor:pointer;font-size:1.4rem;margin-left:1rem;">🌙</button>
+        </div>
+    </nav>
+    <!-- Mega Menu / Categories Bar -->
+    <div class="fk-categories-bar">
+        <a href="#" class="fk-category">Electronics</a>
+        <a href="#" class="fk-category">TVs & Appliances</a>
+        <a href="#" class="fk-category">Men</a>
+        <a href="#" class="fk-category">Women</a>
+        <a href="#" class="fk-category">Baby & Kids</a>
+        <a href="#" class="fk-category">Home & Furniture</a>
+        <a href="#" class="fk-category">Sports</a>
+        <a href="#" class="fk-category">Grocery</a>
+        <a href="#" class="fk-category">More</a>
+    </div>
+    <!-- Hero Carousel / Banner -->
+    <section class="fk-hero-carousel">
+        <div class="fk-carousel-slide active">
+            <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=900&q=80" alt="Big Sale">
+            <div class="fk-carousel-caption">
+                <h2>Big Summer Sale</h2>
+                <p>Up to 60% off on top brands!</p>
+            </div>
+        </div>
+        <div class="fk-carousel-slide">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="New Arrivals">
+            <div class="fk-carousel-caption">
+                <h2>New Arrivals</h2>
+                <p>Latest gadgets and accessories</p>
+            </div>
+        </div>
+        <div class="fk-carousel-slide">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=900&q=80" alt="Fashion Deals">
+            <div class="fk-carousel-caption">
+                <h2>Fashion Fiesta</h2>
+                <p>Trendy styles for everyone</p>
+            </div>
+        </div>
+        <button class="fk-carousel-btn prev">&#10094;</button>
+        <button class="fk-carousel-btn next">&#10095;</button>
+    </section>
+    <!-- Deals/Offers Section -->
+    <section class="fk-deals-section">
+        <h2>Deals of the Day</h2>
+        <div class="fk-deals-grid">
+            <div class="fk-deal-card">
+                <img src="https://via.placeholder.com/100" alt="Deal 1">
+                <div>Smartphone<br><span class="deal-price">$299</span></div>
+            </div>
+            <div class="fk-deal-card">
+                <img src="https://via.placeholder.com/100" alt="Deal 2">
+                <div>LED TV<br><span class="deal-price">$499</span></div>
+            </div>
+            <div class="fk-deal-card">
+                <img src="https://via.placeholder.com/100" alt="Deal 3">
+                <div>Headphones<br><span class="deal-price">$59</span></div>
+            </div>
+            <div class="fk-deal-card">
+                <img src="https://via.placeholder.com/100" alt="Deal 4">
+                <div>Washing Machine<br><span class="deal-price">$399</span></div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Rows by Category -->
+    <section class="fk-product-row">
+        <h2>Electronics</h2>
+        <div class="fk-product-grid">
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Wireless Headphones">
+                <div class="fk-product-title">Wireless Headphones</div>
+                <div class="fk-product-price">₹599.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Smart Watch">
+                <div class="fk-product-title">Smart Watch</div>
+                <div class="fk-product-price">₹989.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Bluetooth Speaker">
+                <div class="fk-product-title">Bluetooth Speaker</div>
+                <div class="fk-product-price">₹839.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Laptop">
+                <div class="fk-product-title">Laptop</div>
+                <div class="fk-product-price">₹40,000.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="DSLR Camera">
+                <div class="fk-product-title">DSLR Camera</div>
+                <div class="fk-product-price">₹5,499.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section class="fk-product-row">
+        <h2>Fashion</h2>
+        <div class="fk-product-grid">
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Men's T-Shirt">
+                <div class="fk-product-title">Men's T-Shirt</div>
+                <div class="fk-product-price">₹419.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Women's Dress">
+                <div class="fk-product-title">Women's Dress</div>
+                <div class="fk-product-price">₹929.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Kids' Shoes">
+                <div class="fk-product-title">Kids' Shoes</div>
+                <div class="fk-product-price">₹524.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80" alt="Men's Jeans">
+                <div class="fk-product-title">Men's Jeans</div>
+                <div class="fk-product-price">₹834.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Women's Handbag">
+                <div class="fk-product-title">Women's Handbag</div>
+                <div class="fk-product-price">₹849.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section class="fk-product-row">
+        <h2>Home & Furniture</h2>
+        <div class="fk-product-grid">
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80" alt="Sofa Set">
+                <div class="fk-product-title">Sofa Set</div>
+                <div class="fk-product-price">₹8,399.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=400&q=80" alt="Dining Table">
+                <div class="fk-product-title">Dining Table</div>
+                <div class="fk-product-price">₹9,299.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=400&q=80" alt="Queen Bed">
+                <div class="fk-product-title">Queen Bed</div>
+                <div class="fk-product-price">₹6,349.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="Bookshelf">
+                <div class="fk-product-title">Bookshelf</div>
+                <div class="fk-product-price">₹889.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+            <div class="fk-product-card">
+                <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80" alt="Table Lamp">
+                <div class="fk-product-title">Table Lamp</div>
+                <div class="fk-product-price">₹524.99</div>
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">ShopEase</div>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" alt="Facebook"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram"></a>
+                <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2024 ShopEase. All rights reserved.</div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html> 

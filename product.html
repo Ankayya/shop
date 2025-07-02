@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ShopEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">ShopEase</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="product-detail-section">
+            <div class="product-detail-card">
+                <div class="product-gallery">
+                    <img id="product-image" src="https://via.placeholder.com/250" alt="Product Image" class="main-image">
+                    <div class="gallery-thumbnails" id="gallery-thumbnails"></div>
+                </div>
+                <div class="product-detail-info">
+                    <h2 id="product-name">Product Name</h2>
+                    <p id="product-description">Product description goes here.</p>
+                    <span class="price" id="product-price">₹0.00</span>
+                    <button id="add-to-cart-btn">Add to Cart</button>
+                    <button id="buy-now-btn">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        <!-- Product Details Section -->
+        <section class="product-specs-section">
+            <h3>Product Details</h3>
+            <ul id="product-specs"></ul>
+            <div id="product-long-description"></div>
+        </section>
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <h3>Customer Reviews</h3>
+            <div id="reviews-list"></div>
+            <form id="review-form">
+                <h4>Add Your Review</h4>
+                <input type="text" id="reviewer-name" placeholder="Your Name" required>
+                <select id="review-rating" required>
+                    <option value="">Rating</option>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                </select>
+                <textarea id="review-comment" placeholder="Your review..." required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html> 
